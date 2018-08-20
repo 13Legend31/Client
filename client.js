@@ -30,5 +30,5 @@ setInterval(() => {
     .catch(() => console.log('gg'))
 }, 1500000)
 
-const PORT = process.env.PORT || 1337
+const PORT = process.env.PORT || 3000
 client.listen(PORT)
