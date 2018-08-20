@@ -25,13 +25,6 @@ client.get('*', (req, res) => {
 })
 
 // wake me up inside
-client.get('/wake/me/up/inside', (req, res) => {
-    res.send({
-        wake:'me',
-        up:'inside'
-    })
-})
-
 setInterval(() => {
     fetch('https://ezbracketapi.herokuapp.com/wake/me/up/inside')
     .catch(() => console.log('gg'))
